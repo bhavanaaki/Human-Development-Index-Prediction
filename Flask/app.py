@@ -2,10 +2,12 @@ import numpy as np
 import pandas as pd
 from flask import Flask, render_template, request
 import pickle
+import os
 
 app = Flask(__name__)
 
-model = pickle.load(open('HDI.pkl', 'rb'))
+model_path = os.path.join(os.path.dirname(__file__), "HDI.pkl")
+model = pickle.load(open(model_path, "rb"))
 
 @app.route('/')
 def home():
