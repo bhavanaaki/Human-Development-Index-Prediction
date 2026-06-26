@@ -98,7 +98,3 @@ http://127.0.0.1:5000
 - HDI Category Classification
 
 ---
-
-## Author
-
-Bhavana Aki
