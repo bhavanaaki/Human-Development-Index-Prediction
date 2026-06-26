@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
+<!-- Page Title -->
 <title>Predict HDI</title>
 
 <style>
@@ -83,14 +85,18 @@ button:hover{
 
 <body>
 
+<!-- Background Overlay -->
 <div class="overlay">
 
+<!-- Prediction Form Container -->
 <div class="container">
 
 <h1>🌍 HDI Predictor</h1>
 
+<!-- Form to Collect User Inputs -->
 <form action="/predict" method="post">
 
+<!-- Country Selection -->
 <select name="Country" required>
     <option value="">Select Country</option>
     <option value="0">Afghanistan</option>
@@ -102,6 +108,7 @@ button:hover{
     <option value="167">Turkey</option>
 </select>
 
+<!-- Expected Years of Schooling -->
 <input
 type="number"
 step="any"
@@ -109,6 +116,7 @@ name="Expected_Years_Schooling"
 placeholder="Expected Years of Schooling"
 required>
 
+<!-- Mean Years of Schooling -->
 <input
 type="number"
 step="any"
@@ -116,6 +124,7 @@ name="Mean_Years_Schooling"
 placeholder="Mean Years of Schooling"
 required>
 
+<!-- Gross National Income Per Capita -->
 <input
 type="number"
 step="any"
@@ -123,12 +132,14 @@ name="GNI_Per_Capita"
 placeholder="Gross National Income Per Capita"
 required>
 
+<!-- Submit Button -->
 <button type="submit">
 Predict HDI
 </button>
 
 </form>
 
+<!-- Back to Home Page -->
 <div class="home">
 <a href="/Home">⬅ Back Home</a>
 </div>
